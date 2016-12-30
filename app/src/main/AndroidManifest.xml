@@ -23,6 +23,13 @@
         </service>
 
 
+        <provider
+            android:name="io.fusionbit.syncadapterdemo.StubProvider"
+            android:authorities="io.fusionbit.syncadapterdemo.provider"
+            android:exported="false"
+            android:syncable="true"/>
+
+
         <activity android:name=".ActivityInitial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
